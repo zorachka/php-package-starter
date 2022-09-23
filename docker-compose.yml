@@ -14,3 +14,8 @@ services:
             context: docker/php-fpm
         volumes:
             - ./:/app
+    php-cli:
+        build:
+            context: docker/php-cli
+        volumes:
+            - ./:/app
