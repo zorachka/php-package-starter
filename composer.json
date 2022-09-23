@@ -14,5 +14,21 @@
               "name": "Siarhei Bautrukevich",
               "email": "hello@bautrukevich.com"
           }
-      ]
+      ],
+    "autoload": {
+        "psr-4": {
+            "Zorachka\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Zorachka\\": "./tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "phpunit --colors=always"
+    }
 }
