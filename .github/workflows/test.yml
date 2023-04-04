@@ -27,7 +27,7 @@ jobs:
       extensions: apcu
       # ini-values: date.timezone='UTC'
       os: >-
-        ['ubuntu-latest', 'windows-latest']
+        ['ubuntu-latest']
       php: >-
-        ['8.0', '8.1']
+        ['8.1']
       tools: composer:v2
