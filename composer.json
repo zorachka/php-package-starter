@@ -39,6 +39,6 @@
         "cs-lint": "php-cs-fixer fix --config=.php-cs-fixer.php --allow-risky=yes --dry-run --diff",
         "cs-fix": "php-cs-fixer fix --config=.php-cs-fixer.php --allow-risky=yes",
         "analyse": "phpstan analyse -c phpstan.neon",
-        "test": "bin/phpunit --colors=always"
+        "test": "vendor/bin/phpunit --colors=always"
     }
 }

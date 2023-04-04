@@ -7,7 +7,6 @@ on:
       - '.gitignore'
       - '.gitattributes'
       - 'phpstan.neon'
-
   push:
     paths-ignore:
       - 'docs/**'
@@ -16,11 +15,13 @@ on:
       - '.gitignore'
       - '.gitattributes'
       - 'phpstan.neon'
+    branches:
+      - main
 
 name: static analysis
 
 jobs:
-  psalm:
+  phpstan:
     uses: zorachka/actions/.github/workflows/phpstan.yml@main
     with:
       os: >-
