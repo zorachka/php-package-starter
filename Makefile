@@ -1,6 +1,6 @@
 start: docker-down-clear docker-pull docker-build-pull docker-up app-init
 stop: docker-down-clear
-check: lint analyze test
+check: cs-lint analyse test
 
 docker-up:
 	docker compose up -d
